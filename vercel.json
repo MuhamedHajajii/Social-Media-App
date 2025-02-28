@@ -1,13 +1,20 @@
-{
-  "version": 2,
-  "public": true,
-  "name": "test-universal",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api" }
-  ],
-  "functions": {
-    "api/index.js": {
-      "includeFiles": "dist/social-media-app/browser/**"
+
+
+  {
+    "version": 2,
+    "public": true,
+    "name": "YOUR-PROJECT",
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/api"
+      }
+    ],
+    "functions": {
+      "api/index.js": {
+        "includeFiles": "dist/social-media-app/**"
+      }
     }
   }
-}
+  
+  

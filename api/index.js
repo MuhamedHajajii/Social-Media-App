@@ -1,3 +1,3 @@
-const server = require("../dist/social-media-app/server/main");
-
-module.exports = server.app();
+export default import("../dist/social-media-app/server/server.mjs").then(
+  (module) => module.app()
+);
