@@ -4,7 +4,7 @@
     {
       "src": "dist/social-media-app/server/server.mjs",
       "use": "@vercel/node",
-      "config": { "runtime": "nodejs18.x" }
+      "config": { "runtime": "nodejs22.x" }
     }
   ],
   "routes": [
