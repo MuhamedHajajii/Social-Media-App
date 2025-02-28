@@ -1,13 +1,13 @@
 import { RenderMode, ServerRoute } from '@angular/ssr';
 
 export const serverRoutes: ServerRoute[] = [
-  {
-    path: 'post-details/:id', // DashBoard
-    renderMode: RenderMode.Client, // CSR Client Side Rendering // Load Server ✅ // SEO ❌
-  },
+  // {
+  //   path: 'post-details/:id', // DashBoard
+  //   renderMode: RenderMode.Client, // CSR Client Side Rendering // Load Server ✅ // SEO ❌
+  // },
   {
     path: '**', // DashBoard
-    renderMode: RenderMode.Prerender, // CSR Client Side Rendering // Load Server ✅ // SEO ❌
+    renderMode: RenderMode.Server, // CSR Client Side Rendering // Load Server ✅ // SEO ❌
   },
   // {
   //   path: '**', // News Website
