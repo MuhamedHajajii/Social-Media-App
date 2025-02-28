@@ -8,7 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:ssr:social-media-app": "node dist/social-media-app/server/server.mjs"
+     "build:ssr": "ng build && ng run social-media-app:server"
   },
   
   "private": true,
