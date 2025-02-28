@@ -1,16 +1,14 @@
 {
   "name": "social-media-app",
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-     "build:ssr": "ng build && ng run social-media-app:server"
+    "build:ssr": "ng build && ng run social-media-app:server"
   },
-  
   "private": true,
   "dependencies": {
     "@angular/animations": "^19.1.0",
@@ -23,15 +21,16 @@
     "@angular/platform-server": "^19.1.0",
     "@angular/router": "^19.1.0",
     "@angular/ssr": "^19.1.5",
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "@tailwindcss/postcss": "^4.0.9",
     "express": "^4.18.2",
+    "flowbite": "^3.1.2",
     "postcss": "^8.5.3",
     "rxjs": "~7.8.0",
     "tailwindcss": "^4.0.9",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
-  
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.1.5",
     "@angular/cli": "^19.1.5",
