@@ -1,0 +1,1 @@
+import{Ka as i,La as o,Qa as s,xa as t}from"./chunk-7QM77V6U.js";var p=class e{static \u0275fac=function(n){return new(n||e)};static \u0275cmp=t({type:e,selectors:[["app-sing-in"]],decls:2,vars:0,template:function(n,m){n&1&&(i(0,"p"),s(1,"sing-in works!"),o())},encapsulation:2})};export{p as SingInComponent};

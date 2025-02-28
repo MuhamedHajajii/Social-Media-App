@@ -1,0 +1,1 @@
+import{Ka as t,La as p,Qa as a,xa as o}from"./chunk-7QM77V6U.js";var i=class e{static \u0275fac=function(n){return new(n||e)};static \u0275cmp=o({type:e,selectors:[["app-not-found"]],decls:2,vars:0,template:function(n,m){n&1&&(t(0,"p"),a(1,"not-found works!"),p())},encapsulation:2})};export{i as NotFoundComponent};
