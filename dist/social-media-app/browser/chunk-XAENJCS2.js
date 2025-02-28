@@ -1,1 +1,0 @@
-import{d as a}from"./chunk-U3M3NPVX.js";import"./chunk-NDUVRPJ2.js";import{Ma as n,xa as o}from"./chunk-7QM77V6U.js";var i=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-main-layout"]],decls:1,vars:0,template:function(e,p){e&1&&n(0,"router-outlet")},dependencies:[a],encapsulation:2})};export{i as MainLayoutComponent};

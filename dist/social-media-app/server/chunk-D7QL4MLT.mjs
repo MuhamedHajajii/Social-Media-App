@@ -1,2 +1,0 @@
-import './polyfills.server.mjs';
-import{g as i}from"./chunk-2QZROSJ4.mjs";import"./chunk-7HZZODBB.mjs";import{Ma as n,Na as a,Oa as u,Sa as p,xa as o}from"./chunk-WKOQ6WKO.mjs";import"./chunk-X2SEQXRR.mjs";var l=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=o({type:e,selectors:[["app-auth-layout"]],decls:3,vars:0,template:function(t,r){t&1&&(n(0,"p"),p(1,"auth-layout works!"),a(),u(2,"router-outlet"))},dependencies:[i],encapsulation:2})};export{l as AuthLayoutComponent};

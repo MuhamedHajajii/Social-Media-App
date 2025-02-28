@@ -18,8 +18,10 @@ export class PostsService {
     return this.http.post<ICreatePost>(`${WEB_SITE_BASE_URL}posts`, postData);
   }
 
-  getAllPosts() {
-    return this.http.get<IAllPosts>(`${WEB_SITE_BASE_URL}posts`);
+  getAllPosts(page: number = 1) {
+    return this.http.get<IAllPosts>(
+      `${WEB_SITE_BASE_URL}posts?page=${page}&limit=5`
+    );
   }
   getPostById(postId: string) {
     return this.http.get<IPostById>(`${WEB_SITE_BASE_URL}posts/${postId}`);

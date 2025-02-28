@@ -10,6 +10,7 @@ import {
   provideClientHydration,
   withEventReplay,
 } from '@angular/platform-browser';
+import { provideAnimations } from '@angular/platform-browser/animations';
 import {
   provideHttpClient,
   withFetch,
@@ -25,6 +26,7 @@ export const appConfig: ApplicationConfig = {
       withViewTransitions(),
       withInMemoryScrolling({ scrollPositionRestoration: 'enabled' })
     ),
+    provideAnimations(),
     provideHttpClient(withFetch(), withInterceptors([tokenInterceptor])), // xmlHttpRequest
     provideClientHydration(withEventReplay()),
   ],

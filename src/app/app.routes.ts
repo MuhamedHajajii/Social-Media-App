@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { authGuard } from './core/guards/auth.guard';
 import { logUserGuard } from './core/guards/log-user.guard';
+import { detailsResolver } from './core/resolvers/details.resolver';
 
 export const routes: Routes = [
   {
@@ -42,6 +43,14 @@ export const routes: Routes = [
           import('./pages/main/timeline/timeline.component').then(
             (e) => e.TimelineComponent
           ),
+      },
+      {
+        path: 'post-details/:id',
+        loadComponent: () =>
+          import('./pages/main/post-details/post-details.component').then(
+            (e) => e.PostDetailsComponent
+          ),
+        resolve: { hamada: detailsResolver },
       },
     ],
   },
