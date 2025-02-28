@@ -1,14 +1,19 @@
 {
-  "name": "social-media-app",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:social-media-app": "node dist/social-media-app/server/server.mjs"
-  },
+  
+    "name": "test",
+    "version": "0.0.0",
+    "scripts": {
+      "ng": "ng",
+      "start": "ng serve",
+      "build-dev": "ng build",
+      "watch": "ng build --watch --configuration development",
+      "test": "ng test",
+      "dev:ssr": "ng run test:serve-ssr",
+      "serve:ssr": "node dist/test/server/main.js",
+      "build:ssr": "ng build && ng run test:server",
+      "prerender": "ng run test:prerender",
+      "vercel-build": "npm run build:ssr"
+    },
   "private": true,
   "dependencies": {
     "@angular/animations": "^19.1.0",
