@@ -1,0 +1,101 @@
+@if (allPosts) { @for (post of allPosts.posts; track $index) {
+<section class="bg-white my-10 rounded p-6 md:w-2/3 mx-auto">
+  <article>
+    <!-- post header -->
+    <div class="flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <img class="user-img" [src]="post.user.photo" [alt]="post.user.name" />
+        <div>
+          <h2 class="font-bold">{{ post.user.name }}</h2>
+          <p class="text-gray-500">
+            {{ post.createdAt | date : "MMMM dd yyyy hh:mm a" }}
+            <!-- 3 Hours Ago custom pipe -->
+          </p>
+        </div>
+      </div>
+      <div>
+        <button>
+          <i class="fa-solid text-gray-500 cursor-pointer fa-ellipsis"></i>
+        </button>
+      </div>
+    </div>
+    <!-- post body -->
+    <div>
+      <p class="mb-3">
+        {{ post.body }}
+      </p>
+      <img class="rounded" [src]="post.image" [alt]="post.body" />
+    </div>
+    <div>
+      <button class="text-blue-800 cursor-pointer">show more comments</button>
+    </div>
+
+    <!-- comments -->
+    <div class="p-4">
+      <div class="bg-[#eee] rounded p-4">
+        <!-- comment header -->
+        <div class="flex justify-between items-center">
+          <div class="flex items-center space-x-2">
+            <img
+              class="w-5 h-5 rounded-full"
+              src="/images/profile.png"
+              alt="user profile"
+            />
+            <div class="flex space-x-1 items-center">
+              <h2 class="font-bold">Route C44 Students</h2>
+              <p class="text-gray-500">3 Hours Ago</p>
+            </div>
+          </div>
+          <div>
+            <button>
+              <i class="fa-solid text-gray-500 cursor-pointer fa-ellipsis"></i>
+            </button>
+          </div>
+        </div>
+
+        <p class="p-2 text-gray-500">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, eos?
+        </p>
+      </div>
+    </div>
+    <!-- add Comment -->
+    <div class="p-4">
+      <form>
+        <label for="chat" class="sr-only">Your message</label>
+        <div class="flex items-center px-2 py-4 rounded-lg bg-[#eee]">
+          <textarea
+            id="chat"
+            rows="1"
+            class="block mx-4 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Your message..."
+          ></textarea>
+          <button
+            type="submit"
+            class="inline-flex justify-center p-2 text-blue-600 rounded-full cursor-pointer hover:bg-blue-100"
+          >
+            <svg
+              class="w-5 h-5 rotate-90 rtl:-rotate-90"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 18 20"
+            >
+              <path
+                d="m17.914 18.594-8-18a1 1 0 0 0-1.828 0l-8 18a1 1 0 0 0 1.157 1.376L8 18.281V9a1 1 0 0 1 2 0v9.281l6.758 1.689a1 1 0 0 0 1.156-1.376Z"
+              />
+            </svg>
+            <span class="sr-only">Send message</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </article>
+</section>
+} } @else {
+<div class="min-h-[30vh] flex justify-center items-center">
+  <div
+    style="border-top-color: transparent"
+    class="w-16 h-16 border-4 border-blue-400 border-solid rounded-full animate-spin"
+  ></div>
+</div>
+}
