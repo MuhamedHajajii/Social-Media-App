@@ -1,20 +1,16 @@
-
-
-  {
-    "version": 2,
-    "public": true,
-    "name": "YOUR-PROJECT",
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/api"
-      }
-    ],
-    "functions": {
-      "api/index.js": {
-        "includeFiles": "dist/social-media-app/**"
-      }
+{
+  "version": 2,
+  "public": true,
+  "name": "social-media-app",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api"
+    }
+  ],
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "dist/social-media-app/**"
     }
   }
-  
-  
+}
