@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "dist/social-media-app/server/main.js",
+      "src": "dist/social-media-app/server/main.server.mjs",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/social-media-app/server/main.js"
+      "dest": "dist/social-media-app/server/main.server.mjs"
     }
   ]
 }
